@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{#{% import "bootstrap/wtf.html" as wtf %}#}
+{% block content%}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <div class='center-block'><h3 class>用户登录</h3></div>
+            {{ login_form.username.label }} {{ login_form.username }}
+            {{ login_form.password.label }} {{ login_form.password }}
+            {{ login_form.password2.label }} {{ login_form.password2 }}
+            {{ login_form.submit }}
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+</div>
+{% endblock content%}
